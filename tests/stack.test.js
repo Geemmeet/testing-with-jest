@@ -19,12 +19,14 @@ test('peek on stack with two or more elements returns the top element', () => {
 });
 
 //Eget test
-test('pop a stack with ', () => {
+test('pop a stack three times with three elements where the value of each pop is returned and the last element is undefined', () => {
+    stack.empty();
     stack.push(15)
     stack.push("ostkaka")
     stack.push("")
     expect(stack.pop()).toBe("");
     expect(stack.pop()).toBe("ostkaka");
     expect(stack.pop()).toBe("BANANPURE");
+    expect(stack.pop()).toBe("");
     expect(stack.pop()).toBeUndefined();
 });

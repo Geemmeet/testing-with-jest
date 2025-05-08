@@ -16,3 +16,8 @@ exports.pop = function () {
 exports.peek = function () {
     return _.last(stack);
 }
+
+//empty stack
+exports.empty = function () {
+    stack = [];
+}
