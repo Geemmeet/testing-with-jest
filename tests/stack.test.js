@@ -27,6 +27,6 @@ test('pop a stack three times with three elements where the value of each pop is
     expect(stack.pop()).toBe("");
     expect(stack.pop()).toBe("ostkaka");
     expect(stack.pop()).toBe(15);
-    expect(stack.pop()).toBe("");
+    expect(stack.pop()).toBeUndefined();
     expect(stack.pop()).toBeUndefined();
 });
