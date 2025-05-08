@@ -39,6 +39,7 @@ describe('Clicking "Pusha till stacken"', () => {
         await push.click();
         let alert = await driver.switchTo().alert();
         alert.sendKeys("Ostkaka");
+        await alert.accept();
 
         let pop = await driver.findElement(By.id('pop'));
         await pop.click();
