@@ -25,6 +25,6 @@ test('pop a stack with ', () => {
     stack.push("")
     expect(stack.pop().toBe(""))
     expect(stack.pop().toBe("ostkaka"))
-    expect(stack.pop().toBe("BANANPANNKAKA"))
+    expect(stack.pop().toBe(15))
     expect(stack.pop().toBeUndefined());
 });
