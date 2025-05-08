@@ -19,7 +19,7 @@ test('peek on stack with two or more elements returns the top element', () => {
 });
 
 //Eget test
-test('pop a stack three times with three elements where the value of each pop is returned and the last element is undefined', () => {
+test('pop a stack four times with three elements where the value of each pop is returned and the last element is undefined', () => {
     stack.empty();
     stack.push(15)
     stack.push("ostkaka")
