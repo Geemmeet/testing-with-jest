@@ -33,4 +33,20 @@ describe('Clicking "Pusha till stacken"', () => {
         await alert.sendKeys("Bananer");
         await alert.accept();
     });
+
+    it ('', async () => {
+        let push = await driver.findElement(By.id('push'));
+        await push.click();
+        let alert = await driver.switchTo().alert();
+        alert.sendKeys("Ostkaka");
+
+        let pop = await driver.findElement(By.id('pop'));
+        await pop.click();
+        let SecondAlert = await driver.switchTo().alert();
+        await SecondAlert.getText(Text, "Tog bort bröd");
+    });
 });
+
+
+
+
