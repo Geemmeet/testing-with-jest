@@ -43,7 +43,7 @@ describe('Clicking "Pusha till stacken"', () => {
         let pop = await driver.findElement(By.id('pop'));
         await pop.click();
         let SecondAlert = await driver.switchTo().alert();
-        await SecondAlert.getText(Text, "Tog bort bröd");
+        await SecondAlert.getText(Text, "Tog bort ostkaka");
     });
 });
 
