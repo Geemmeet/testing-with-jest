@@ -23,8 +23,8 @@ test('pop a stack with ', () => {
     stack.push(15)
     stack.push("ostkaka")
     stack.push("")
-    expect(stack.pop().toBe(""))
-    expect(stack.pop().toBe("ostkaka"))
-    expect(stack.pop().toBe(15))
-    expect(stack.pop().toBeUndefined());
+    expect(stack.pop()).toBe("");
+    expect(stack.pop()).toBe("ostkaka");
+    expect(stack.pop()).toBe("BANANPURE");
+    expect(stack.pop()).toBeUndefined();
 });
