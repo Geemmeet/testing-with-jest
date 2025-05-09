@@ -33,21 +33,18 @@ describe('Clicking "Pusha till stacken"', () => {
         await alert.sendKeys("Bananer");
         await alert.accept();
     });
-
-    it ('', async () => {
-        let push = await driver.findElement(By.id('push'));
-        await push.click();
-        let alert = await driver.switchTo().alert();
-        alert.sendKeys("Ostkaka");
-        await alert.accept();
-
-        let pop = await driver.findElement(By.id('pop'));
-        await pop.click();
-        let SecondAlert = await driver.switchTo().alert();
-        await SecondAlert.getText(Text, "Tog bort ostkaka");
-    });
 });
 
+//Eget test (https://nodejs.org/api/assert.html)
+const assert = require('node:assert').strict;
+
+test('Clicking "poppa stacken"', async () => {
+    let pop = await driver.findElement(By.id('pop'));
+    await pop.click();
+    let alert = await driver.switchTo().alert();
+    let message = await alert.getText();
+    assert.strictEqual(message, 45);
+});
 
 
 
