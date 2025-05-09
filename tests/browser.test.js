@@ -45,6 +45,3 @@ test('Clicking "poppa stacken"', async () => {
     let message = await alert.getText();
     assert.strictEqual(message, "Tog bort Bananer");
 });
-
-
-
