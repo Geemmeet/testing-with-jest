@@ -43,7 +43,7 @@ test('Clicking "poppa stacken"', async () => {
     await pop.click();
     let alert = await driver.switchTo().alert();
     let message = await alert.getText();
-    assert.strictEqual(message, 45);
+    assert.strictEqual(message, "Tog bort Bananer");
 });
 
 
